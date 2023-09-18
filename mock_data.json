@@ -1,0 +1,36 @@
+{
+  "operaciones": [
+    {
+      "operacion": "suma",
+      "valor1": 4.5,
+      "valor2": 5.32
+    },
+    {
+      "operacion": "resta",
+      "valor1": 4.5,
+      "valor2": [{
+        "operacion": "potencia",
+        "valor1": 10,
+        "valor2": 3
+      }]
+    },
+    {
+      "operacion": "suma",
+      "valor1": [{
+        "operacion": "seno",
+        "valor": 90
+      }],
+      "valor2": 5.32
+    },
+    {
+      "operacion": "multiplicacion",
+      "valor1": 7,
+      "valor2": 3
+    },
+    {
+      "operacion": "division",
+      "valor1": 15,
+      "valor2": 3
+    }
+  ]
+}
