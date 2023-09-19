@@ -102,7 +102,7 @@ def errors():
     result = ProcessData(data=datos_json).get_errors_from_data()
 
     if result == 1:
-       messagebox.showerror("Mostrar Errores", "Error: La información enviada no contiene errores.")
+      messagebox.showerror("Mostrar Errores", "Error: La información enviada no contiene errores.")
     else:
       messagebox.showinfo("Mostrar Errores", "Archivo generado con éxito. \nVerifique el JSON generado en la raíz del proyecto")
     

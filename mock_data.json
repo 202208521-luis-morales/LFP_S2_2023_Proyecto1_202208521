@@ -18,7 +18,7 @@
       "operacion": "suma",
       "valor1": [{
         "operacion": "seno",
-        "valor": 90
+        "valor1": 90
       }],
       "valor2": 5.32
     },

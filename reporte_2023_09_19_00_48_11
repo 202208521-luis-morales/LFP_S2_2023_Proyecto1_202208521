@@ -1,0 +1,40 @@
+digraph {
+	1 [label="suma
+9.82" style=filled]
+	"1__v1" [label=4.5 style=filled]
+	"1__v2" [label=5.32 style=filled]
+	1 -> "1__v1" [label=v1]
+	1 -> "1__v2" [label=v2]
+	"2.v2" [label="potencia
+1000" style=filled]
+	"2.v2__v1" [label=10 style=filled]
+	"2.v2__v2" [label=3 style=filled]
+	"2.v2" -> "2.v2__v1" [label=v1]
+	"2.v2" -> "2.v2__v2" [label=v2]
+	2 -> "2.v2" [label=v2]
+	2 [label="resta
+-995.5" style=filled]
+	"2__v1" [label=4.5 style=filled]
+	2 -> "2__v1" [label=v1]
+	"3.v1" [label="seno
+1.0" style=filled]
+	"3.v1__v1" [label=90 style=filled]
+	"3.v1" -> "3.v1__v1" [label=v1]
+	3 -> "3.v1" [label=v1]
+	3 [label="suma
+6.32" style=filled]
+	"3__v2" [label=5.32 style=filled]
+	3 -> "3__v2" [label=v2]
+	4 [label="multiplicacion
+21" style=filled]
+	"4__v1" [label=7 style=filled]
+	"4__v2" [label=3 style=filled]
+	4 -> "4__v1" [label=v1]
+	4 -> "4__v2" [label=v2]
+	5 [label="division
+5.0" style=filled]
+	"5__v1" [label=15 style=filled]
+	"5__v2" [label=3 style=filled]
+	5 -> "5__v1" [label=v1]
+	5 -> "5__v2" [label=v2]
+}

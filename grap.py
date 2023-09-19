@@ -1,18 +1,22 @@
 from graphviz import Digraph
 
 dot = Digraph(format='png', engine='dot')
-dot.attr(rankdir='LR')
 
-dot.node('0', shape='circle', label='x0')
-dot.node('1', shape='circle', label='x1')
-dot.node('2', shape='circle', label='x2')
-dot.node('3', shape='doublecircle', label='x3') # Aceptación
+dot.node('A', label='4.5')
+dot.node('B', label='5.32')
+dot.node('C', label='suma\n9.82')
 
-dot.edge('0', '1', 'a')
-dot.edge('1', '2', 'a')
-dot.edge('2', '3', 'a')
-dot.edge('2', '3', 'b')
-dot.edge('3', '3', 'a')
-dot.edge('3', '3', 'b')
+dot.node('D', label='4.5')
+dot.node('E', label='10')
+dot.node('F', label='3')
+dot.node('G', label='potencia\n1000')
+dot.node('H', label='resta\n-995.5')
+
+dot.edge('A', 'B')
+dot.edge('A', 'C')
+dot.edge('H', 'D')
+dot.edge('H', 'G')
+dot.edge('G', 'E')
+dot.edge('G', 'F')
 
 dot.render('automata', format='png')
